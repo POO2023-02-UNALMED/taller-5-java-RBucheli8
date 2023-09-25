@@ -13,7 +13,7 @@ public class Zoologico {
 	}
 	
 	public Zoologico() {
-		this("","");
+		this(null, null);
 	}
 	
 	public void agregarZonas(Zona zona) {

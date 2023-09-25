@@ -7,7 +7,7 @@ public class Animal {
 	protected int edad;
 	protected String habitat;
 	protected String genero;
-	protected Zona zona;
+	protected Zona zona = null;
 	
 	public Animal(String nombre, int edad, String habitat, String genero) {
 		this.nombre = nombre;
@@ -34,17 +34,19 @@ public class Animal {
 	}
 	
 	public String toString() {
-		String formato = "Mi nombre es " + this.nombre +
-				", tengo una edad de " + this.edad + 
-				", habito en " + this.habitat + 
-				" y mi genero es " + this.genero;
-		String complemento = " la zona en la que me ubico es " + this.zona +
-							", en el " + this.zona.getZoo().getNombre();
 		if (this.zona == null) {
-			return formato;
+			return "Mi nombre es " + this.nombre +
+					", tengo una edad de " + this.edad + 
+					", habito en " + this.habitat + 
+					" y mi genero es " + this.genero;
 		}
 		else {
-			return formato + complemento;
+			return "Mi nombre es " + this.nombre +
+					", tengo una edad de " + this.edad + 
+					", habito en " + this.habitat + 
+					" y mi genero es " + this.genero +
+					" la zona en la que me ubico es " + this.zona +
+					", en el " + this.zona.getZoo().getNombre();
 		}
 	}
 	

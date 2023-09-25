@@ -14,7 +14,7 @@ public class Zona {
 	}
 	
 	public Zona() {
-		this("", null);
+		this(null, null);
 	}
 	
 	public void agregarAnimales(Animal animal) {
