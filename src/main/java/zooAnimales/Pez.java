@@ -22,7 +22,7 @@ public class Pez extends Animal {
 		this("", 0, "", "", "", 0);
 	}
 
-	public int cantidadPeces() {
+	public static int cantidadPeces() {
 		return listado.length;
 	}
 	
@@ -30,12 +30,12 @@ public class Pez extends Animal {
 		return "nadar";
 	}
 	
-	public Reptil crearSalmon(String nombre, int edad, String genero) {
+	public static Reptil crearSalmon(String nombre, int edad, String genero) {
 		salmones++;
 		return new Reptil(nombre, edad, "oceano", genero, "rojo", 6);
 	}
 	
-	public Reptil crearBacalao(String nombre, int edad, String genero) {
+	public static Reptil crearBacalao(String nombre, int edad, String genero) {
 		bacalaos++;
 		return new Reptil(nombre, edad, "oceano", genero, "gris", 6);
 	}

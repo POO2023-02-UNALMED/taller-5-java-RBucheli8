@@ -6,14 +6,13 @@ public class Zona {
 	private Zoologico zoo;
 	private Animal[] animales;
 	
-	public Zona(String nombre, Zoologico zoo, Animal[] animales) {
+	public Zona(String nombre, Zoologico zoo) {
 		this.nombre = nombre;
 		this.zoo = zoo;
-		this.animales = animales;
 	}
 	
 	public Zona() {
-		this("", null, null);
+		this("", null);
 	}
 	
 	public void agregarAnimales(Animal animal) {

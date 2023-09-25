@@ -5,14 +5,13 @@ public class Zoologico {
 	private String ubicacion;
 	private Zona[] zonas;
 	
-	public Zoologico(String nombre, String ubicacion, Zona[] zonas) {
+	public Zoologico(String nombre, String ubicacion) {
 		this.nombre = nombre;
 		this.ubicacion = ubicacion;
-		this.zonas = zonas;
 	}
 	
 	public Zoologico() {
-		this("","", null);
+		this("","");
 	}
 	
 	public void agregarZonas(Zona zona) {

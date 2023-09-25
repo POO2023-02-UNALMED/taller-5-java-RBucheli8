@@ -20,7 +20,7 @@ public class Ave extends Animal {
 		this("", 0, "", "", "");
 	}
 
-	public int cantidadAves() {
+	public static int cantidadAves() {
 		return listado.length;
 	}
 	
@@ -28,12 +28,12 @@ public class Ave extends Animal {
 		return "volar";
 	}
 	
-	public Ave crearHalcon(String nombre, int edad, String genero) {
+	public static Ave crearHalcon(String nombre, int edad, String genero) {
 		halcones++;
 		return new Ave(nombre, edad, "montanas", genero, "cafe glorioso");
 	}
 	
-	public Ave crearAguila(String nombre, int edad, String genero) {
+	public static Ave crearAguila(String nombre, int edad, String genero) {
 		aguilas++;
 		return new Ave(nombre, edad, "montanas", genero, "blanco y amarillo");
 	}

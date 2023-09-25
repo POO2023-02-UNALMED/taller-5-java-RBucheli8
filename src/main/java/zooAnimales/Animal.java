@@ -25,12 +25,12 @@ public class Animal {
 		return "desplazarse";
 	}
 	
-	public String totalPorTipo() {
-		return "“Mamiferos: " + "cM" + "\n" +
-				"Aves: " + "cAv" + "\n" +
-				"Reptiles: " + "cR" + "\n" +
-				"Peces: " + "cP" + "\n" +
-				"Anfibios: " + "cAn" + "\n";
+	public static String totalPorTipo() {
+		return "“Mamiferos: " + Mamifero.cantidadMamiferos() + "\n" +
+				"Aves: " + Ave.cantidadAves() + "\n" +
+				"Reptiles: " + Reptil.cantidadReptiles() + "\n" +
+				"Peces: " + Pez.cantidadPeces() + "\n" +
+				"Anfibios: " + Anfibio.cantidadAnfibios() + "\n";
 	}
 	
 	public String toString() {
